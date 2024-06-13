@@ -27,5 +27,41 @@ namespace HomeWorkOne
         {
             
         }
+
+        
+    }
+
+    class SquareRoot
+    {
+        public static double[] squareRoot (
+            double a,
+            double b,
+            double c)
+        {
+            if (a == 0.0)
+            {
+                return new double[];
+            }
+            
+            double D;
+            
+            D = b * b - 4 * a * c;
+            
+            if (D > 0)
+            {
+
+            }
+            else
+            {
+                if (D < 0)
+                {
+                    return new double[] { -b + Math.Sqrt(D) / (2 * a), -b - Math.Sqrt(D) / (2 * a) };
+                }
+                else
+                {
+                    return new double[] { -b / (2 * a), -b / (2 * a) };
+                }
+            }
+        }
     }
 }
